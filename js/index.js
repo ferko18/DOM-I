@@ -115,15 +115,20 @@ bottocnt3.textContent = siteContent["main-content"]["vision-content"]
 const contactheader = document.querySelector('.contact');
 
 
-//paragraphs
+//contact
+const contacttext1 = document.querySelectorAll('.contact h4')[0];
+contacttext1.textContent =siteContent.contact["contact-h4"]
 
-const contacttext1 = document.querySelectorAll('.contact p')[0];
+const contacttext2 = document.querySelectorAll('.contact p')[0];
+contacttext2.textContent=siteContent.contact.address;
 
+const contacttext3 = document.querySelectorAll('.contact p')[1];
+contacttext3.textContent=siteContent.contact.phone;
 
-const contacttext2 = document.querySelectorAll('.contact p')[1];
-
-const contacttext3 = document.querySelectorAll('.contact p')[2];
+const contacttext4 = document.querySelectorAll('.contact p')[2];
+contacttext4.textContent=siteContent.contact.email;
 
 //footer selector 
 
 const footerselector = document.querySelector('footer p')
+footerselector.textContent=siteContent.footer.copyright
