@@ -57,8 +57,16 @@ navigation[5].innerHTML =siteContent.nav["nav-item-6"]
 //cta selectors
 
 const ctahead = document.querySelector('.cta-text h1');
+
+ctahead.textContent =siteContent.cta.h1;
+
 const ctabutton = document.querySelector('.cta-text button');
-const ctaimg = document.querySelector('#cta.img');
+
+ctabutton.textContent =siteContent.cta.button;
+
+const ctaimg = document.getElementById('cta-img');
+
+ctaimg.setAttribute('src', siteContent.cta["img-src"])
 
 //maincontent selectors 
 
