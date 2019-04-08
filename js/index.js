@@ -40,3 +40,58 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+/* Task 1 :Create selectors to point your data into  elements: Firealem *****************************************/
+
+//select navigation items 
+
+const navigation = document.querySelectorAll('nav a');
+
+//cta selectors
+
+const ctahead = document.querySelector('.cta-text h1');
+const ctabutton = document.querySelector('.cta-text button');
+const ctaimg = document.querySelector('#cta.img');
+
+//maincontent selectors 
+
+//main content first div
+const toptext1 = document.querySelectorAll('.top-content .text-content')[0];
+
+//main content second div
+const toptext2 = document.querySelectorAll('.top-content .text-content')[1];
+
+//middle image 
+
+const middleimage = document.getElementById('middle-img')
+
+//bottomcontent selectors 
+
+//bottom content first div
+const bottomext1 = document.querySelectorAll('.bottom-content .text-content')[0];
+
+//bottom content second div
+const bottomext2 = document.querySelectorAll('.bottom-content .text-content')[1];
+
+
+//bottom content third  div
+const bottomext3 = document.querySelectorAll('.bottom-content .text-content')[2];
+
+
+//contact selectors 
+//header 
+const contactheader = document.querySelector('.contact');
+
+
+//paragraphs
+
+const contacttext1 = document.querySelectorAll('.contact p')[0];
+
+
+const contacttext2 = document.querySelectorAll('.contact p')[1];
+
+const contacttext3 = document.querySelectorAll('.contact p')[2];
+
+//footer selector 
+
+const footerselector = document.querySelector('footer p')
