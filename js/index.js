@@ -46,7 +46,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //select navigation items 
 
 const navigation = document.querySelectorAll('nav a');
-//update nav with HTML
+//update nav with JSON
 navigation[0].innerHTML =siteContent.nav["nav-item-1"]
 navigation[1].innerHTML =siteContent.nav["nav-item-2"]
 navigation[2].innerHTML =siteContent.nav["nav-item-3"]
@@ -71,27 +71,44 @@ ctaimg.setAttribute('src', siteContent.cta["img-src"])
 //maincontent selectors 
 
 //main content first div
-const toptext1 = document.querySelectorAll('.top-content .text-content')[0];
+const toptext1 = document.querySelectorAll('.top-content .text-content h4')[0];
+toptext1.textContent =siteContent["main-content"]["features-h4"];
+
+const topcontent1 = document.querySelectorAll('.top-content .text-content p')[0]
+topcontent1.textContent = siteContent["main-content"]["features-content"]
 
 //main content second div
-const toptext2 = document.querySelectorAll('.top-content .text-content')[1];
+const toptext2 = document.querySelectorAll('.top-content .text-content h4')[1];
+toptext2.textContent =siteContent["main-content"]["about-h4"]
 
+const topcontent2 = document.querySelectorAll('.top-content .text-content p')[1]
+topcontent2.textContent = siteContent["main-content"]["about-content"]
 //middle image 
 
-const middleimage = document.getElementById('middle-img')
-
+const middleimage = document.getElementById('middle-img');
+middleimage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 //bottomcontent selectors 
 
 //bottom content first div
-const bottomext1 = document.querySelectorAll('.bottom-content .text-content')[0];
+const bottomext1 = document.querySelectorAll('.bottom-content .text-content h4')[0];
+bottomext1.textContent = siteContent["main-content"]["services-h4"]
+const bottomcnt1 = document.querySelectorAll('.bottom-content .text-content p')[0];
+bottomcnt1.textContent = siteContent["main-content"]["services-content"]
 
 //bottom content second div
-const bottomext2 = document.querySelectorAll('.bottom-content .text-content')[1];
+const bottomext2 = document.querySelectorAll('.bottom-content .text-content h4')[1];
+bottomext2.textContent = siteContent["main-content"]["product-h4"]
+
+const bottocnt2 = document.querySelectorAll('.bottom-content .text-content p')[1];
+bottocnt2.textContent = siteContent["main-content"]["product-content"]
 
 
 //bottom content third  div
-const bottomext3 = document.querySelectorAll('.bottom-content .text-content')[2];
+const bottomext3 = document.querySelectorAll('.bottom-content .text-content h4')[2];
+bottomext3.textContent = siteContent["main-content"]["vision-h4"]
 
+const bottocnt3 = document.querySelectorAll('.bottom-content .text-content p')[2];
+bottocnt3.textContent = siteContent["main-content"]["vision-content"]
 
 //contact selectors 
 //header 
