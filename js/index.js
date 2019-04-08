@@ -111,7 +111,7 @@ const bottocnt3 = document.querySelectorAll('.bottom-content .text-content p')[2
 bottocnt3.textContent = siteContent["main-content"]["vision-content"]
 
 //contact selectors 
-//header 
+//contact header 
 const contactheader = document.querySelector('.contact');
 
 
@@ -131,4 +131,21 @@ contacttext4.textContent=siteContent.contact.email;
 //footer selector 
 
 const footerselector = document.querySelector('footer p')
-footerselector.textContent=siteContent.footer.copyright
+footerselector.textContent=siteContent.footer.copyright;
+
+//Task 3 
+const navtab = document.querySelector('nav')
+navtab.style.backgroundColor ='green'
+//added a see also tab
+var newnavitem = document.createElement('a')
+newnavitem.textContent ='See Also'
+navtab.appendChild(newnavitem)
+
+//added icon at the begining
+var newnavitem2 = document.createElement('img')
+newnavitem2.style.height= '25px';
+newnavitem2.style.margin ='5px';
+newnavitem2.style.marginBottom='1px'
+newnavitem2.setAttribute('src', 'img/address-card-regular.svg')
+
+navtab.prepend(newnavitem2)
