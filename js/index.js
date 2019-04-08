@@ -46,6 +46,13 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //select navigation items 
 
 const navigation = document.querySelectorAll('nav a');
+//update nav with HTML
+navigation[0].innerHTML =siteContent.nav["nav-item-1"]
+navigation[1].innerHTML =siteContent.nav["nav-item-2"]
+navigation[2].innerHTML =siteContent.nav["nav-item-3"]
+navigation[3].innerHTML =siteContent.nav["nav-item-4"]
+navigation[4].innerHTML =siteContent.nav["nav-item-5"]
+navigation[5].innerHTML =siteContent.nav["nav-item-6"]
 
 //cta selectors
 
