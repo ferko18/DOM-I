@@ -47,12 +47,19 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const navigation = document.querySelectorAll('nav a');
 //update nav with JSON
-navigation[0].innerHTML =siteContent.nav["nav-item-1"]
-navigation[1].innerHTML =siteContent.nav["nav-item-2"]
-navigation[2].innerHTML =siteContent.nav["nav-item-3"]
-navigation[3].innerHTML =siteContent.nav["nav-item-4"]
-navigation[4].innerHTML =siteContent.nav["nav-item-5"]
-navigation[5].innerHTML =siteContent.nav["nav-item-6"]
+// navigation[0].innerHTML =siteContent.nav["nav-item-1"]
+// navigation[1].innerHTML =siteContent.nav["nav-item-2"]
+// navigation[2].innerHTML =siteContent.nav["nav-item-3"]
+// navigation[3].innerHTML =siteContent.nav["nav-item-4"]
+// navigation[4].innerHTML =siteContent.nav["nav-item-5"]
+// navigation[5].innerHTML =siteContent.nav["nav-item-6"]
+
+//cleaner with for loop********************************************refractor**********8
+for(var i=0; i<navigation.length; i++)
+{
+  navigation[i].innerHTML =siteContent.nav[`nav-item-${i}`]
+  
+}
 
 //cta selectors
 
@@ -146,6 +153,7 @@ for ( var i=0; i<navtaba.length;i++){
 //added a see also tab
 var newnavitem = document.createElement('a')
 newnavitem.textContent ='See Also'
+newnavitem.style.color='green';
 navtab.appendChild(newnavitem)
 
 //added icon at the begining
@@ -156,3 +164,6 @@ newnavitem2.style.marginBottom='1px'
 newnavitem2.setAttribute('src', 'img/address-card-regular.svg')
 
 navtab.prepend(newnavitem2)
+
+
+
