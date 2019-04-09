@@ -135,7 +135,14 @@ footerselector.textContent=siteContent.footer.copyright;
 
 //Task 3 
 const navtab = document.querySelector('nav')
-navtab.style.backgroundColor ='green'
+navtab.style.backgroundColor ='lightgray'
+
+navtaba= document.querySelectorAll('nav a')
+//
+//change color to green/can also use .forEach
+for ( var i=0; i<navtaba.length;i++){
+  navtaba[i].style.color = 'green'
+}
 //added a see also tab
 var newnavitem = document.createElement('a')
 newnavitem.textContent ='See Also'
